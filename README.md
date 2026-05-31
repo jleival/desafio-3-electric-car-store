@@ -9,6 +9,29 @@
    [![GitHub Repository](https://img.shields.io/badge/GitHub-Repositorio-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jleival/desafio-3-electric-car-store)
 
 ---
+## 📱 Vista Previa del Proyecto (Responsive Design)
+
+A continuación se presentan las capturas de pantalla de la interfaz de la tienda adaptada a diferentes resoluciones de pantalla:
+
+### 🖥️ Vista de Escritorio (Desktop)
+*Diseño con menú lateral persistente y cuadrícula completa de productos (4 columnas).*
+
+![Vista de Escritorio](escritorio.png)
+
+---
+
+### 📑 Vista de Tablet
+*El menú se traslada a la parte superior y la barra de ordenamiento se posiciona a la izquierda, reduciendo la cuadrícula a 2 columnas.*
+
+![Vista de Tablet](Tablet.png)
+
+---
+
+### 📱 Vista de Móvil (Mobile)
+*Diseño compacto con menú de navegación colapsable (hamburguesa) y flujo de productos en una sola columna para mejorar la experiencia táctil.*
+
+![Vista de Móvil](mobil.png)
+---
 
 ## 🚀 Características del Proyecto
 

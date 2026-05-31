@@ -1,0 +1,317 @@
+/* ==========================================================================
+   1. Reset General y Estilos Base
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/* Layout Base: Celular */
+.container {
+    display: grid;
+    grid-template-areas:
+        "nav"
+        "filtro"
+        "main"
+        "footer";
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.ordenar-contenedor {
+    grid-area: filtro;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+/* Estilos Móvil */
+.nav {
+    background-color: #1384c5;
+    padding: 15px 20px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo h2 {
+    font-size: 1.4rem;
+    font-weight: normal;
+}
+
+.nav-links {
+    display: none;
+}
+
+.menu-hamburguesa {
+    font-size: 2rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.ordenar-contenedor {
+    background-color: #e0e0e0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.ordenar-contenedor select {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.main {
+    padding: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
+.card h3 {
+    color: #808080;
+    margin: 15px 0;
+    font-weight: normal;
+}
+
+.card button {
+    padding: 10px 20px;
+    background-color: #1384c5;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.paginacion {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 30px;
+}
+
+.paginacion a {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #1384c5;
+}
+
+.paginacion a.active {
+    color: #333;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #0f2c59;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 15px;
+    font-size: 1.5rem;
+}
+
+
+/* ==========================================================================
+   2. MEDIA QUERY TABLET (Desde 576px hasta 991px)
+   ========================================================================== */
+@media (min-width: 576px) and (max-width: 991px) {
+    .container {
+        grid-template-areas:
+            "nav nav"
+            "filtro main"
+            "footer footer";
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: auto 1fr auto;
+    }
+
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 40px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        list-style: none;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.1rem;
+    }
+
+    .menu-hamburguesa {
+        display: none;
+    }
+
+    .ordenar-contenedor {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 30px 15px;
+        height: 100%;
+    }
+
+    .ordenar-contenedor label {
+        margin-bottom: 10px;
+    }
+
+    .ordenar-contenedor select {
+        width: 100%;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* ==========================================================================
+   3. MEDIA QUERY ESCRITORIO (Desde 992px en adelante)
+   ========================================================================== */
+@media (min-width: 992px) {
+    .container {
+        /* Se reorganizan las áreas para que el footer ocupe la base de la barra izquierda */
+        grid-template-areas:
+            "nav filtro"
+            "nav main"
+            "footer main";
+        grid-template-columns: 250px 1fr;
+        /* El nav y main crecen proporcionalmente, el filtro y footer ocupan lo justo */
+        grid-template-rows: auto 1fr auto;
+        min-height: 100vh;
+    }
+
+    /* Nav lateral izquierdo vertical */
+    .nav {
+        grid-area: nav;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 40px;
+        padding: 40px 20px;
+        height: 100%;
+    }
+
+    .nav-logo {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /* Enlaces verticales perfectos */
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        list-style: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+
+    .menu-hamburguesa {
+        display: none;
+    }
+
+    /* Filtro horizontal superior */
+    .ordenar-contenedor {
+        grid-area: filtro;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 20px;
+        width: 100%;
+    }
+
+    .ordenar-contenedor label {
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+
+    .ordenar-contenedor select {
+        width: 200px;
+    }
+
+    .main {
+        grid-area: main;
+        padding: 30px 40px;
+    }
+
+    /* Grilla de productos a 4 columnas fluidas */
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* ¡CORREGIDO! El footer ahora se queda abajo a la izquierda de forma estable */
+    .footer {
+        grid-area: footer;
+        background-color: #0f2c59;
+        padding: 25px 20px;
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -16,22 +16,21 @@ A continuación se presentan las capturas de pantalla de la interfaz de la tiend
 ### 🖥️ Vista de Escritorio (Desktop)
 *Diseño con menú lateral persistente y cuadrícula completa de productos (4 columnas).*
 
-![Vista de Escritorio](probando-ejercicio/assets/img/escritorio.png)
+![Vista de Escritorio](assets/img/escritorio.png)
 
 ---
 
 ### 📑 Vista de Tablet
 *El menú se traslada a la parte superior y la barra de ordenamiento se posiciona a la izquierda, reduciendo la cuadrícula a 2 columnas.*
 
-![Vista de Tablet](probando-ejercicio/assets/img/Tablet.png)
+![Vista de Tablet](assets/img/Tablet.png)
 
 ---
 
 ### 📱 Vista de Móvil (Mobile)
 *Diseño compacto con menú de navegación colapsable (hamburguesa) y flujo de productos en una sola columna para mejorar la experiencia táctil.*
 
-![Vista de Móvil](probando-ejercicio/assets/img/mobil.png)
-
+![Vista de Móvil](assets/img/mobil.png)
 ---
 
 ### 📱 Vista de Móvil (Mobile)

@@ -3,6 +3,12 @@
 ¡Bienvenido al repositorio de **Electric Car Store**! Este proyecto es una interfaz web moderna, responsiva y optimizada para la visualización y filtrado de vehículos eléctricos. El desarrollo se ha realizado aplicando metodologías modernas de maquetación en CSS, garantizando una experiencia de usuario fluida en cualquier dispositivo.
 
 ---
+## ⚡ Previsualización
+
+   [![Sitio Web](https://img.shields.io/badge/Demo-Sitio_En_Vivo-brightgreen?style=for-the-badge&logo=githubpages&logoColor=white)](https://jleival.github.io/desafio-3-electric-car-store/)
+   [![GitHub Repository](https://img.shields.io/badge/GitHub-Repositorio-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jleival/desafio-3-electric-car-store)
+
+---
 
 ## 🚀 Características del Proyecto
 

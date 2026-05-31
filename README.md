@@ -36,7 +36,6 @@ A continuación se presentan las capturas de pantalla de la interfaz de la tiend
 ### 📱 Vista de Móvil (Mobile)
 *Diseño compacto con menú de navegación colapsable (hamburguesa) y flujo de productos en una sola columna para mejorar la experiencia táctil.*
 
-![Vista de Móvil](mobil.png)
 ---
 
 ## 🚀 Características del Proyecto
